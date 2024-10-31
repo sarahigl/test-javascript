@@ -2,6 +2,7 @@ describe('calculatrice test spec', () => {
   beforeEach(()=>{
     cy.visit('http://localhost:5173/')
   })
+  //test fail h1 does not have class name 
   it('affiche un intitulé l operation réalisé :', () => {
     cy.get('h1')
     .contains("have.text", "AddingNumbers...")
@@ -16,6 +17,7 @@ describe('calculatrice test spec', () => {
     .find('input')
     .should("have.value", '')
   })
+  //test fail h2 does not have class name 
   it('affiche le bon symbole d operation :', ()=>{
     cy.get('h2').contains("have.text", "+")
   })
@@ -23,6 +25,7 @@ describe('calculatrice test spec', () => {
     cy.get('#calculBtn')
     .should("be.visible")
   })
+  //test fail result doesn't display the result
   it('affiche un résultat de calcul au click :', ()=>{
     cy.get('#firstNumber')
     .type(2);
