@@ -16,7 +16,7 @@ describe('counter test', () => {
     cy.get('#counter').click().click().click()
     cy.get('#counter').should('have.text', 'count is 3')
   })
-  it('affiche la documentation vite', () => {
+  it('affiche logo 2', () => {
     cy.get('.logo.vanilla').should('be.visible')
   })
   it('affiche la documentation vite', () => {
@@ -25,5 +25,4 @@ describe('counter test', () => {
     .and('have.attr', 'src')
     .and('include', 'vite.svg');
   })
-
 })
