@@ -35,7 +35,8 @@ function calculate() {
 
   document.getElementById('result').innerText = result;
 }
-let btn = document.querySelector('button')
+
+let btn = document.querySelector('#calculBtn')
 btn.addEventListener('click',calculate)
 
 const pokemonListe = document.getElementById('pokeListe');

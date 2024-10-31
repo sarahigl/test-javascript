@@ -6,7 +6,18 @@ describe('template spec', () => {
     cy.get('#pokeListe') 
   })
   it('doit vérifier que le status de la réponse API est 200', () => {
-    cy.request('GET','https://pokeapi.co/api/v2/pokemon')
-    // .should("have.value", 200)
-  })
+    cy.request('/pokemon').then((response) => {
+      expect(response.status).to.eq(200);
+    });
+  });
+  it('doit vérifier que le temp de réponse API est inf à 2000ms', () => {
+    cy.request('/pokemon').then((response) => {
+      expect(response.duration).to.be.lessThan(2000);
+    });
+  });
+  it('doit vérifier que BULBASAUR est premier', () => {
+    cy.request('GET', '/pokemon').then((response) => {
+      //
+    });
+  });
 })
