@@ -61,10 +61,10 @@ describe('poke-test-api', () => {
     cy.request('/pokemon')
         .its('status')//is there a status 200 in it
         .should('equal', 200)
-        //2nd version
-    // .then((response) => {
-    //   expect(response.status).to.eq(200);
-    // });
+        2nd version
+    .then((response) => {
+      expect(response.status).to.eq(200);
+    });
   });
   it('doit vérifier que le temp de réponse API est inf à 2000ms', () => {
     const startTime = performance.now(); // Démarre le chrono

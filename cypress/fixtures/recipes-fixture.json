@@ -1,0 +1,40 @@
+{
+    "recipe" : [
+        {
+          "id": 1,
+          "name": "Spaghetti Carbonara",
+          "ingredients": [
+            "spaghetti",
+            "oeufs",
+            "parmesan",
+            "lardons",
+            "poivre"
+          ],
+          "instructions": "Faire cuire les spaghetti. Mélanger les oeufs et le parmesan, puis ajouter aux pâtes avec les lardons. Assaisonner de poivre."
+        },
+        {
+          "id": 2,
+          "name": "Salade César",
+          "ingredients": [
+            "laitue romaine",
+            "croutons",
+            "parmesan",
+            "poulet",
+            "sauce César"
+          ],
+          "instructions": "Mélanger la laitue, le poulet, les croûtons et le parmesan. Ajouter la sauce César et mélanger."
+        },
+        {
+          "id": 3,
+          "name": "Tarte aux pommes",
+          "ingredients": [
+            "pâte brisée",
+            "pommes",
+            "sucre",
+            "beurre",
+            "cannelle"
+          ],
+          "instructions": "Disposer les pommes sur la pâte, saupoudrer de sucre et de cannelle, puis ajouter quelques morceaux de beurre. Faire cuire au four."
+        }
+      ]
+}
